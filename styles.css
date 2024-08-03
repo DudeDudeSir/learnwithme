@@ -1,17 +1,43 @@
-/* Container for centering the video */
-.video-container {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #f0f0f0; /* Optional background color */
+/* Reset default styles */
+body, h2, video {
+    margin: 0;
+    padding: 0;
 }
 
-/* Style for the video player */
-.my-video {
-    width: 80%; /* Adjust the width as needed */
-    max-width: 800px; /* Maximum width */
-    border: 2px solid #333; /* Optional border */
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the video gallery */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for each video item */
+.video-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Styles for headings */
+.video-item h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Styles for video player */
+.video-item video {
+    display: block;
+    width: 100%;
+    height: auto;
 }
