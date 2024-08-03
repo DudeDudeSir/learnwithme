@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #C0C0C0;
 }
 
 .video-gallery {
@@ -13,7 +13,7 @@ body {
 }
 
 .video-item {
-    background-color: #fff;
+    background-color: #00FFFF;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -39,14 +39,12 @@ video {
     padding: 10px 0;
     width: 100%;
 }
-
 .marquee {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
     animation: marquee 15s linear infinite;
 }
-
 .marquee p {
     margin: 0;
     font-size: 16px;
@@ -60,3 +58,22 @@ video {
         transform: translateX(-100%);
     }
 }
+/* Basic styling for an h1 element */
+h1 {
+    font-size: 2.5em; /* Adjusts the size of the text */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Sets the text color */
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 0; /* Removes the default top margin */
+    margin-bottom: 0.5em; /* Adds some space below the heading */
+    line-height: 1.2; /* Adjusts the space between lines of text */
+    font-family: 'Arial', sans-serif; /* Sets the font family */
+}
+
+/* Example of a more stylized h1 */
+h1.stylized {
+    font-size: 3em;
+    color: #4A90E2; /* A shade of blue */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    margin: 20px 0; /* Adds margin above and below the heading */
+    }
