@@ -31,4 +31,32 @@ video {
     max-width: 100%;
     border-radius: 4px;
 }
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
 
+.marquee {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
