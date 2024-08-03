@@ -1,0 +1,17 @@
+/* Container for centering the video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Style for the video player */
+.my-video {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Maximum width */
+    border: 2px solid #333; /* Optional border */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
